@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="container flex block mt-10">
+        <div>
+            <img class="w-2/4 ml-62" src="mac.png">
+        </div>
+        <div>
+            <h1 class="text-4xl font-medium">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+            <p class="mt-4">Apple M1 chip with 8-core Cpu with 4 performance cores and 4 effieiency
+                <br>
+                cores, 7-core GPU, and 16-core Neural Engine 8GB unifield memory 256GB
+                <br>
+                SSD storage Two Thundrbolt/USB 4 ports Magic Mouse Magic keyboard -
+                <br>US English
+            </p>
+            <section class="block">
+                <div>
+                    <h3 class="mt-8 font-bold mb-2">Memory</h3>
+                    <div>
+                        <button class="p-3 border rounded border-gray-200 shadow" onclick="handleRam(8)">8GB
+                            unifield
+                            memory</button>
+
+                        <button class="p-3 border rounded border-gray-200 shadow" onclick="handleRam(16)">16GB
+                            unifield
+                            memory</button>
+
+                        <p id="demo"></p>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <h3 class="mt-8 font-bold mb-2">Storage</h3>
+                        <div>
+
+
+
+                            <button class="p-3 border rounded border-gray-200 shadow " onclick="handleMemory(256)">256GB
+                                SSD
+                                Storage</button>
+
+                            <button class="p-3 border rounded border-gray-200 shadow " onclick="handleMemory(512)">512GB
+                                SSD Storage
+                                memory</button>
+
+                            <button class="p-3 border rounded border-gray-200 shadow " onclick="handleMemory(1024)">1TB
+                                SSD
+                                Storage</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="mt-8 font-bold mb-2">Choose your delivery option</h3>
+                    <div>
+                        <button class="p-3 border rounded border-gray-200 shadow "
+                            onclick="handleDelivery('free')">riday, Aug 25 FREE
+                            Prime Delivery</button>
+                        <button class="p-3 border rounded border-gray-200 shadow "
+                            onclick="handleDelivery('premium')">Friday, Aug 21
+                            Delivery charge $20</button>
+                    </div>
+                </div>
+                <section class="mt-8">
+                    <div class="text-xl py-2">Best Price $ <span id="best-price">1299</span></div>
+                    <div class="text-xl py-2">Extra Memory Cost $ <span id="memory-cost">0</span> </div>
+                    <div class="text-xl py-2">Extra Storgae Cost $<span id="storage-cost">0</span></div>
+                    <div class="text-xl py-2">Delivery Charge $<span id="delivery-cost">0</span></div>
+                    <div class="text-xl py-2">Total Price $ <span id="total-price">1299</span></div>
+                </section>
+                <div>
+                    <input type="text" id="coupon-text">
+                    <button id="coupon-button" class="">Submit</button>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section>
+        <hr class="mx-10">
+        <h1 class="text-3xl font-bold text-center m-4">Total: $<span id="final-total-price">1299</span></h1>
+    </section>
+
+    <script src="as.js"></script>
+</body>
+
+</html>
